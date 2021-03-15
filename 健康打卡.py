@@ -5,6 +5,11 @@ import datetime
 import urllib
 import hashlib
 
+isuspw = [
+    [“帐户”，“密码”，“姓名”],
+    [“账号”，“密码”，“姓名”]＃可添加多个账号
+    ]
+
 class MyError(Exception):
     def __init__(self, msg):
         self.msg = msg
@@ -166,10 +171,6 @@ class Dk():
             else:
                raise MyError("提交的数据有误，请检查。")
 
-isuspw = [
-    [“帐户”，“密码”，“姓名”],
-    [“账号”，“密码”，“姓名”]＃可添加多个账号
-    ]
 for user_passwd in isuspw:
     user=Dk()
     user.us=user_passwd[0]   # 账号

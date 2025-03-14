@@ -4,7 +4,6 @@ var body = $request.body;
 var replaceDict = {
     "2024": "2022",
     "2025": "2023",
-    "\"xqj\":1,":"\"xqj\":0,"
 };
 
 // 遍历替换所有匹配项
